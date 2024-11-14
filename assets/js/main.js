@@ -1,17 +1,8 @@
 $(function() {
-    
-    "use strict";
-    
-    //===== Prealoder
-    
+     "use strict";
     $(window).on('load', function(event) {
         $('.preloader').delay(500).fadeOut(500);
     });
-
-    
-    
-    //===== Slick
-    
     $('.slider-active').slick({
         dots: false,
         arrows: false,
@@ -24,15 +15,5 @@ $(function() {
         autoplay: true,
         autoplaySpeed: 3000,
     });
-        
-    
-    //===== 
-    
-    new WOW().init();
-    
-    
-    
-    
-    
-    
+   new WOW().init();  
 });
